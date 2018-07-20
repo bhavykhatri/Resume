@@ -1,0 +1,199 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Graduate Curriculum Vitae
+% LaTeX Template
+% Version 1.2 (3/28/15)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Rensselaer Polytechnic Institute 
+% (http://www.rpi.edu/dept/arc/training/latex/resumes/)
+%
+% Modified by:
+% Daniel L Marks <xleafr@gmail.com> 3/28/2015
+%
+% Important note:
+% This template requires the res.cls file to be in the same directory as the
+% .tex file. The res.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%-------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%-------------------------------------------------------------------------------
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% You can have multiple style options the legal options ones are:
+%
+%   centered:	the name and address are centered at the top of the page 
+%				(default)
+%
+%   line:		the name is the left with a horizontal line then the address to
+%				the right
+%
+%   overlapped:	the section titles overlap the body text (default)
+%
+%   margin:		the section titles are to the left of the body text
+%		
+%   11pt:		use 11 point fonts instead of 10 point fonts
+%
+%   12pt:		use 12 point fonts instead of 10 point fonts
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[margin]{res}  
+
+% Default font is the helvetica postscript font
+\usepackage{helvet}
+
+% Increase text height
+\textheight=700pt
+
+\usepackage{hyperref}
+\begin{document}
+
+%-------------------------------------------------------------------------------
+%	NAME AND ADDRESS SECTION
+%-------------------------------------------------------------------------------
+\section{  Bhavy Khatri }
+\section{}
+% Note that addresses can be used for other contact information:
+% -phone numbers
+% -email addresses
+% -linked-in profile
+
+\address{Dept. of Mathematics and Scientific Computing\\Dept. of Computer Science and Engineering\\Indian Institute of Technology, Kanpur}
+\address { \hfill Phone: +91 7388 7833 17\\ \hfill  Email: \href{bhavy@iitk.ac.in}{ bhavy@iitk.ac.in}\\ \hfill GitHub: \href{https://github.com/bhavykhatri}{https://github.com/bhavykhatri}\\ }
+
+% Uncomment to add a third address
+%\address{Address 3 line 1\\Address 3 line 2\\Address 3 line 3}
+%-------------------------------------------------------------------------------
+
+\begin{resume}
+
+%-------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%-------------------------------------------------------------------------------
+\section{EDUCATION}
+\textbf{Indian Institute of Technology Kanpur} \hfill \textit{2015-2020 (Expected)}\\
+{\sl Bachelor of Science}, Mathematics and Scientific Computing \hfill CPI: 
+9.0*
+\\
+{\sl Second Major}, Computer Science and Engineering \\
+\textbf{Central Academy School, Alwar}\\
+AISSCE(CBSE) \hfill 95\% \\
+\textbf{Central Academy School, Alwar}\\
+AISSE(CBSE) \hfill 10 CGPA \\
+{\small (* -  at the end of 6th semester)}
+%-------------------------------------------------------------------------------
+%-------------------------------------------------------------------------------
+%	PROJECTS SECTION
+%-------------------------------------------------------------------------------
+\section{SCHOLASTIC ACHIEVEMENTS}
+\begin{itemize}
+\item Among top 3 students from Institute who got selected for Global Project Based Learning (GPBL) 2017 at
+\textbf{Shibaura Institute of Technology (SIT) Japan}.
+\item Successfully completed Summer Undergraduate Research Grant for Excellence (SURGE) 2017, 8 weeks internship program granted by Dean of Resources and Alumni, IIT Kanpur.
+\item Received \textbf{Academic Excellence Award}  from the Institute to top 10\% meritorious students of IIT Kanpur.
+%\item Awarded with the KVPY fellowship by Government of India, ranked 356 out of 100,000 students.
+%\item Secured AIR 19 in Technothalon competition organized by IIT Guwahati.
+%\item Among top 1% students in National Standard Examination in Physics-2014
+%\item Secured AIR 61 in National Level Science Talent Search Examination (NSTSE) 2015.
+\end{itemize}
+
+%-------------------------------------------------------------------------------
+
+%-------------------------------------------------------------------------------
+%	COMPUTER SKILLS SECTION
+%-------------------------------------------------------------------------------
+\section{TECHNICAL\\SKILLS}
+%HTML CSS
+\textbf{Languages}: C, C++, Python,  Bash, SQL.
+\\
+%\textbf{Applications}: Vi/Vim, Eclipse, Visual Studio, Git, VMWare, VirtualBox, 
+%MySQL, Oracle 11g.
+\textbf{Tools}:  Git, \LaTeX,  R, Matlab.
+%MS-Excel Stata
+\\
+\textbf{Operating Systems}:  Linux(Ubuntu), Windows.
+%Other options Unix, Mac OSX, Android
+%-------------------------------------------------------------------------------
+
+%-------------------------------------------------------------------------------
+%	EXPERIENCE SECTION
+%-------------------------------------------------------------------------------
+% Modify the format of each position
+\begin{format}
+\title{l}\employer{r}\\
+\dates{l}\location{r}\\
+\body\\
+\end{format}
+%-------------------------------------------------------------------------------
+
+\section{PROJECTS \& INTERNSHIPS}
+\textbf{Car Parts and Damage Detection} \hfill \textit{May’18-July18}\\
+\textit{@Xenon Automotive, Bangalore}
+\begin{itemize}
+\item Implemented \textbf{VGG16} deep learning Image Classifier in Keras for 12 different car parts, achieving \textbf{94\% } test accuracy.
+\item Used pre-trained ImageNet weights (Transfer Learning) along with feature extraction and fine tuning for training on smaller dataset (~2500 Images).
+\item Increased dataset size to 15 folds by using \textbf{Data Augmentation}.
+\item Developed web app and deployed it on the server for detecting various car parts.
+\item State of the art \textbf{YOLOv2} in tensorflow was used for solving damage and  object detection problem.
+\item Created a tool for annotation of Images and storing annotated coordinates to .xml file. Annotated around 3500 Images for training dataset. Results of the project can be found \href{https://github.com/bhavykhatri/car-damage-detection-xenon}{ [here]}.
+\end{itemize}
+\textbf{Social and Religious Biases in Indian Society} \hfill \textit{May’17-July’17}\\
+\textit{Mentored by:Debayan Pakrashi, Dept. of Economic Sciences}
+\begin{itemize}
+\item Analyzed data of 900 women in slum areas to identify effects of interaction among different groups (Religion and Caste) on their social and religious prejudices.
+\item Multiple Linear Regression and its estimation using Ordinary Least Square (OLS) has been used to find the association between dependent variable (y) and different independent variables.
+%\item Explored various aspects of Regression analysis like logit, probit, heteroskedasticity.
+\item Results showed that working together with people from different social and religious background changes their perception. In case of both religion and caste it was getting better. Research poster and project report can be found \href{https://github.com/bhavykhatri/surge-2017-social-and-religious-biases-project}{[here]}
+\\
+\\
+\end{itemize}
+\textbf{Prediction Analysis for Australian Airlines} \hfill \textit{Sep’17-Nov’17}\\
+\textit{Mentored by: Dr. Wasim Ahmad (Economics), Dr. Sharmishtha Mitra (Mathematics)}
+\begin{itemize}
+\item Revenues for company are partly determined by demand from international visitors who are sensitive to 
+currency movements.
+\item Found a negative correlation of Jet Kerosene (per metric tonne) price and AUD/USD which is also consistent because if AUD/USD increases, travellers would be reluctant to visit Australia and in turn the fuel price will fall due to decrease in its demand.
+\item Simulated 1000 paths of prices for next 12 months for both Jet Kerosene as well as AUD/USD using past 25 years data.
+\item Assumed bi-variate normal distribution to predict values for both random variables using random number generated between [0,1]. Github repo for the project is \href{https://github.com/bhavykhatri/prediction-analysis-for-australian-airlines}{[here]}.
+\end{itemize}
+\textbf{New idea for fun drive centering on young people} \hfill \textit{Dec’ 17}\\
+\textit{Honda R\&D, Global Project Based Learning @ SIT Japan}
+\begin{itemize}
+\item Suggested ideas to make driving fun for young people who have been losing interest in automobiles.
+\item Used QFD(Quality Function Deployment) method to consider how to satisfy customer’s desire.
+\item Considered various requirement and KANDO qualityto develop QFD.
+\item Chose solution with highest absolute importance value i.e. “Automobile with communication based on Augmented Reality technology”.
+\item Developed a business model in which one can decide to hang out with people driving near them.
+\item One can also collects virtual coins while driving and can avail discount using those coins at recreational spots.
+\item Revenue for the company will be generated from the recreational points such as movie theatre, hotels etc. as their names would be suggested to the driver as the destination hotspot .
+\end{itemize}
+
+%-------------------------------------------------------------------------------
+%	Interests
+%-------------------------------------------------------------------------------
+\section{RELEVANT COURSES}
+\begin{tabular}{ l l }
+ Data Structure and Algorithms & Machine Learning*\\ 
+ Probability and Statistics & Statistical Simulation and Data Analysis*\\ 
+    Randomised Algorithm & Applied Stochastic Processs \\ 
+   Computer Organization & Operating Systems*  \\
+   Principles of Data Base Systems
+ & Computing Laboratory-I\\
+  Macro Economics & Financial Economics(Audit) \\
+  Fundamental of Computing & \\
+  {\scriptsize * Pursuing in current semester}& \\
+%Real Analyis & Complex Analysis\\ 
+%Partial Differential Equation & Multi Variable Calculus\\
+%Mathematical Logic & Abstract Algebra
+\end{tabular}
+
+
+%-------------------------------------------------------------------------------
+\end{resume}
+\end{document}
